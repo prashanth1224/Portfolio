@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Personal Portfolio of Prashanth - Front End Developer</title>
+  <meta name="keywords" content="prashanth, portfolio, prashanth1224l">
+	
+</head>
+<body>	
+	<header>
+		<img src="assets/images/icons/prashanth.jpg">
+		<a href="#">Get in Touch</a>							
+		<nav class="collapse navbar-collapse" role="navigation">
+			<ul class="nav navbar-nav navbar-right">
+				<li ><a href="#about" >About</a></li>
+				<li ><a href="#Portfolio" >Portfolio</a></li>
+				<li ><a href="#contact" >Contact</a></li>
+			</ul>
+		</nav>		    
+	</header>
+	<div class="large-hero">
+		<img src="assets/images/coffee.jpg">
+		<h1>I'm Prashanth</h1> 
+		<h2>Thanks for visiting my page</h2>		
+		<p>Front End Developer, based in New Jersey.<br>Take a look at some of my works and if you like them, feel free to contact me.
+		</p> 
+		<p><a href="#">Get Started today</a></p>
+	</div >
+		<div id="#about">
+			<img src="assets/images/prashanth.jpg" alt="profile">
+		</div>
+		<div id="Portfolio">			
+			<h2>Portfolio</h2>			
+			<div>
+				<div >
+					<figure >						
+						<a href="http://codepen.io/prashanthr1224/full/xExAJj/" target="_blank">
+						<img src="assets/images/Dr.A.P.J. Abdul Kalam Tribte page.png" alt="Dr. A.P.J. Abdul Kalam Tribute page">
+						<figcaption class="subtitle">
+							Abdul Kalam Tribute Page
+						</figcaption>
+						</a>
+					</figure>	
+				</div>
+				    <div class="col-md-6 ">
+			        <figure class="works">
+			          <a href="#">
+			            <img src="assets/images/randomQuoteMachine.png" alt="random quote machine">
+			            <figcaption class="subtitle">Random Quote Machine</figcaption>
+			          </a>
+			        </figure>
+			        <!--/.thumbnail-->
+			    </div>
+				<div class="col-md-6 ">
+					<figure class="works">
+						<a href="#">
+							<img src="assets/images/calculator.jpg" alt="Coming soon">
+							<figcaption class="subtitle">JavaScript Calculator Coming Soon...</figcaption>
+						</a>
+					</figure>
+						<!--/.thumbnail-->
+				</div>
+				<div class="col-md-6 ">
+					<figure class="works">
+						<a href="#">
+							<img src="assets/images/pomodoro.png" alt="pomodoro">
+							<figcaption class="subtitle">Pomodoro Clock Coming Soon...</figcaption>
+						</a>
+					</figure>
+					<!--/.thumbnail-->
+				</div>
+                <div class="col-md-6 ">
+			        <figure class="works ">
+			          <a href="#">
+			            <img src="assets/images/tic_tac_toe.jpg" alt="tic tac toe game">
+			            <figcaption class="subtitle">Tic Tac Toe Game Coming Soon...</figcaption>
+			          </a>
+			        </figure>
+        		<!--/.thumbnail-->
+         		</div>
+			    <div class="col-md-6 ">
+			        <figure class="works ">
+			          <a href="#">
+			            <img src="assets/images/simon.jpg" alt="simon game">
+			            <figcaption class="subtitle">Simon Game Coming Soon...</figcaption>
+			          </a>
+			        </figure>
+			        <!--/.thumbnail-->
+			    </div>			
+			</div>
+		</div>
+		<div id="contact">
+			<h2>Contact Me</h2>
+			<hr class="hrDark">
+			<div >
+				<form id="form_contact" novalidate="" class="col-lg-6 col-md-6 col-xs-12">
+					<div class="formValid">
+						<label for="txtName">Name</label>
+						<input type="text" placeholder="Name" id="txtName" required=""/>			
+					</div>
+					<div class="formValid">
+						<label for="emailAddress">Email Address</label> 
+						<input type="email" placeholder="Email Address" id="emailAddress" required=""/>
+					</div>
+					<div class="formValid">
+						<label for="numberPhone">Phone Number</label>
+						<input type="tel" placeholder="Phone Number" id="numberPhone" required=""/>			
+					</div>
+					<div class="formValid">
+						<label>Message</label>
+						<textarea id="txtmessage" placeholder="Message" rows="5" required=""></textarea>
+					</div>
+					<br>
+					<button type="submit" class="btn btn-default" id="btnsubmit">Send</button>
+				</form>
+				<div>	
+					<p>
+						Want to get in touch with me? Be it to request more info about myself ... just feel free to drop me a line anytime.
+					</p>
+					<p>I promise to reply A.S.A.P.</p>
+					<p>No spam/soliciting please :)</p>
+				</div>		
+			</div>
+		</div>		
+		<footer>
+			<div id="footer_up">
+				<div>
+					<h3>ABOUT THIS PAGE</h3>
+					<p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and 
+						<i class="fa fa-music" aria-hidden="true"></i> 
+						<br>by <a href="#">Prashanth</a>.
+					</p>
+				</div>
+				<div>
+					<h3>AROUND THE WEB</h3>
+					<div>
+						<ul>
+							<li>
+								<a href="#" class="media">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" class="media">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							    </a>
+							</li>
+							<li>
+								<a href="" class="media">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" class="media">
+									<i class="fa fa-flickr" aria-hidden="true"></i>
+							    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footer_down">
+				Prashanth@2016. All Rights Reserved
+			</div>
+		</footer>
+		<script type="text/javascript" src="portfolio.js"></script>	
+</body>
+</html>
