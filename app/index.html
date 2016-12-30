@@ -4,13 +4,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Personal Portfolio of Prashanth - Front End Developer</title>
-  <meta name="keywords" content="prashanth, portfolio, prashanth1224l">
-	
+  <meta name="keywords" content="prashanth, portfolio, prashanth1224l">	
+
+  <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>	
 	<header>
-		<img src="assets/images/icons/prashanth.jpg">
-		<a href="#">Get in Touch</a>							
+		<img src="assets/images/icons/logo.png">
+		<a href="#" class="btn">Get in Touch</a>							
 		<nav class="collapse navbar-collapse" role="navigation">
 			<ul class="nav navbar-nav navbar-right">
 				<li ><a href="#about" >About</a></li>
@@ -20,150 +21,164 @@
 		</nav>		    
 	</header>
 	<div class="large-hero">
-		<img src="assets/images/coffee.jpg">
-		<h1>I'm Prashanth</h1> 
-		<h2>Thanks for visiting my page</h2>		
-		<p>Front End Developer, based in New Jersey.<br>Take a look at some of my works and if you like them, feel free to contact me.
-		</p> 
-		<p><a href="#">Get Started today</a></p>
+		<picture>
+			<source srcset="assets/images/coffee_large.jpg" media="(min-width: 1380px)">
+			<source srcset="assets/images/coffee_medium.jpg" media="(min-width: 990px)">
+			<source srcset="assets/images/coffee_small.jpg" media="(min-width: 640px)">
+			<img src="assets/images/coffee_smaller.jpg" alt="coffee and keyboard" class="large-hero__image">
+		</picture>
+		<div class="large-hero__text-content">
+			<div class="wrapper">
+				<h1 class="large-hero__title">I'm Prashanth</h1> 
+				<h2 class="large-hero__subtitle">Thanks for visiting my page</h2>		
+				<p class="large-hero__description">Front End Developer, based in <br> New Jersey.<!-- <br>Take a look at some of my works and if you like them, feel free to contact me. -->
+				</p> 
+				<p><a href="#" class="btn btn--orange btn--large">View my works</a></p>
+			</div>
+		</div>
 	</div >
-		<div id="#about">
-			<img src="assets/images/prashanth.jpg" alt="profile">
-		</div>
-		<div id="Portfolio">			
-			<h2>Portfolio</h2>			
-			<div>
-				<div >
-					<figure >						
-						<a href="http://codepen.io/prashanthr1224/full/xExAJj/" target="_blank">
-						<img src="assets/images/Dr.A.P.J. Abdul Kalam Tribte page.png" alt="Dr. A.P.J. Abdul Kalam Tribute page">
-						<figcaption class="subtitle">
-							Abdul Kalam Tribute Page
-						</figcaption>
-						</a>
-					</figure>	
-				</div>
-				    <div class="col-md-6 ">
-			        <figure class="works">
-			          <a href="#">
-			            <img src="assets/images/randomQuoteMachine.png" alt="random quote machine">
-			            <figcaption class="subtitle">Random Quote Machine</figcaption>
-			          </a>
-			        </figure>
-			        <!--/.thumbnail-->
+	<div id="#about" class="page-section">
+		<div class="wrapper">
+			<div class="row row__gutters">
+			    <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+			        <picture>			            
+			            <source srcset="assets/images/prashanth.jpg" media= "(min-width: 1020px)">
+			            <source srcset="assets/images/prashanth-portrait.jpg" media= "(min-width: 800px)">
+			            <img src="assets/images/prashanth-landscape.jpg" alt="prashanth's profile">
+			        </picture>          
 			    </div>
-				<div class="col-md-6 ">
-					<figure class="works">
-						<a href="#">
-							<img src="assets/images/calculator.jpg" alt="Coming soon">
-							<figcaption class="subtitle">JavaScript Calculator Coming Soon...</figcaption>
-						</a>
-					</figure>
-						<!--/.thumbnail-->
+		    	<div class="row__medium-8 row__medium-8--smaller">
+					<div class="generic-content-container">
+						<h2 class="headline headline--no-t-margin">Here&rsquo;s few lines about me&hellip;</h2>
+						<p>I'm Prashanth, New Jersey based Front-End Developer.I am able to work effectively in a team or on my Own.I pride myself on being able to use my knowledge and initiative to deliver high quality results to tight deadlines.I enjoy a challenge and look for the opportunity to expand and develop my skill set.</p>
+						<p>I believe the output of my work, which is always focused at the point where user, business and technical requirements meet and tends to become a perfect product.</p>
+						<p>when I am not coding, you'll find me in the gym.</p>
+						<p>Take a look at some of works and if you like them, feel free to contact me</p>
+					</div>
+		    	</div>        
+      		</div>
+		</div>
+	</div>
+
+	<div id="Portfolio" class="page-section page-section--blue">
+		<div class="wrapper">			
+			<h2 class="headline--centered">Portfolio</h2>			
+			<div>
+				<div>
+					<a href="https://prashanth1224.github.io/travel-site/">
+						 <picture>			            
+				            <source srcset="assets/images/travelsite.jpg" media= "(min-width: 1020px)">
+				            <source srcset="assets/images/travelsite-portrait.jpg" media= "(min-width: 800px)">
+				            <img src="assets/images/travelsite-landscape.jpg" alt="Travel-site">
+				        </picture>
+				        <span class="subtitle">Travel-site</span>
+					</a>					
 				</div>
-				<div class="col-md-6 ">
-					<figure class="works">
-						<a href="#">
-							<img src="assets/images/pomodoro.png" alt="pomodoro">
-							<figcaption class="subtitle">Pomodoro Clock Coming Soon...</figcaption>
-						</a>
-					</figure>
-					<!--/.thumbnail-->
+				<div >					
+					<a href="http://codepen.io/prashanthr1224/full/xExAJj/">
+						 <picture>			            
+				            <source srcset="assets/images/AbdulKalam.jpg" media= "(min-width: 1020px)">
+				            <source srcset="assets/images/AbdulKalam-portrait.jpg" media= "(min-width: 800px)">
+				            <img src="assets/images/AbdulKalam-landscape.jpg" alt="Dr. A.P.J. Abdul Kalam Tribute page">
+				        </picture>
+				        <span>Dr. A.P.J. Abdul Kalam Tribute page</span>
+					</a>
 				</div>
-                <div class="col-md-6 ">
-			        <figure class="works ">
-			          <a href="#">
-			            <img src="assets/images/tic_tac_toe.jpg" alt="tic tac toe game">
-			            <figcaption class="subtitle">Tic Tac Toe Game Coming Soon...</figcaption>
-			          </a>
-			        </figure>
-        		<!--/.thumbnail-->
-         		</div>
-			    <div class="col-md-6 ">
-			        <figure class="works ">
-			          <a href="#">
-			            <img src="assets/images/simon.jpg" alt="simon game">
-			            <figcaption class="subtitle">Simon Game Coming Soon...</figcaption>
-			          </a>
-			        </figure>
-			        <!--/.thumbnail-->
-			    </div>			
+				<div>
+					<a href="http://codepen.io/prashanthr1224/full/bwmmpG/">
+						 <picture>			            
+				            <source srcset="assets/images/randomQuoteMachine.jpg" media= "(min-width: 1020px)">
+				            <source srcset="assets/images/randomQuoteMachine-portrait.jpg" media= "(min-width: 800px)">
+				            <img src="assets/images/randomQuoteMachine-landscape.jpg" alt="Random Quote Machine">
+				        </picture>
+				        <span>Random Quote Machine</span>
+					</a>
+			    </div>
+				<div>
+					<a href="#">
+						 <picture>			            
+				            <source srcset="assets/images/calculator.jpg" media= "(min-width: 1020px)">
+				            <source srcset="assets/images/calculator-portrait.jpg" media= "(min-width: 800px)">
+				            <img src="assets/images/calculator-landscape.jpg" alt="Calculator">
+				        </picture>
+				        <span>JavaScript Calculator Coming Soon...</span>
+					</a>
+				</div>	
 			</div>
 		</div>
-		<div id="contact">
-			<h2>Contact Me</h2>
-			<hr class="hrDark">
-			<div >
-				<form id="form_contact" novalidate="" class="col-lg-6 col-md-6 col-xs-12">
-					<div class="formValid">
-						<label for="txtName">Name</label>
-						<input type="text" placeholder="Name" id="txtName" required=""/>			
-					</div>
-					<div class="formValid">
-						<label for="emailAddress">Email Address</label> 
-						<input type="email" placeholder="Email Address" id="emailAddress" required=""/>
-					</div>
-					<div class="formValid">
-						<label for="numberPhone">Phone Number</label>
-						<input type="tel" placeholder="Phone Number" id="numberPhone" required=""/>			
-					</div>
-					<div class="formValid">
-						<label>Message</label>
-						<textarea id="txtmessage" placeholder="Message" rows="5" required=""></textarea>
-					</div>
-					<br>
-					<button type="submit" class="btn btn-default" id="btnsubmit">Send</button>
-				</form>
-				<div>	
-					<p>
-						Want to get in touch with me? Be it to request more info about myself ... just feel free to drop me a line anytime.
-					</p>
-					<p>I promise to reply A.S.A.P.</p>
-					<p>No spam/soliciting please :)</p>
-				</div>		
-			</div>
-		</div>		
-		<footer>
-			<div id="footer_up">
-				<div>
-					<h3>ABOUT THIS PAGE</h3>
-					<p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and 
-						<i class="fa fa-music" aria-hidden="true"></i> 
-						<br>by <a href="#">Prashanth</a>.
-					</p>
+	</div>
+	<div id="contact">
+		<h2 class="headline headline--centered">Contact Me</h2>
+		<hr class="hrDark">
+		<div >
+			<form id="form_contact" novalidate="" class="col-lg-6 col-md-6 col-xs-12">
+				<div class="formValid">
+					<label for="txtName">Name</label>
+					<input type="text" placeholder="Name" id="txtName" required=""/>			
 				</div>
+				<div class="formValid">
+					<label for="emailAddress">Email Address</label> 
+					<input type="email" placeholder="Email Address" id="emailAddress" required=""/>
+				</div>
+				<div class="formValid">
+					<label for="numberPhone">Phone Number</label>
+					<input type="tel" placeholder="Phone Number" id="numberPhone" required=""/>			
+				</div>
+				<div class="formValid">
+					<label>Message</label>
+					<textarea id="txtmessage" placeholder="Message" rows="5" required=""></textarea>
+				</div>
+				<br>
+				<button type="submit" class="btn" id="btnsubmit">Send</button>
+			</form>
+			<div>	
+				<p>Want to get in touch with me? Be it to request more info about myself ... just feel free to drop me a line anytime.</p>
+				<p>I promise to reply A.S.A.P.</p>
+				<p>No spam/soliciting please :)</p>
+			</div>		
+		</div>
+	</div>		
+	<footer>
+		<div id="footer_up">
+			<div>
+				<h3>ABOUT THIS PAGE</h3>
+				<p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and 
+					<i class="fa fa-music" aria-hidden="true"></i> 
+					<br>by <a href="#">Prashanth</a>.
+				</p>
+			</div>
+			<div>
+				<h3>AROUND THE WEB</h3>
 				<div>
-					<h3>AROUND THE WEB</h3>
-					<div>
-						<ul>
-							<li>
-								<a href="#" class="media">
-									<i class="fa fa-linkedin" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" class="media">
-									<i class="fa fa-github" aria-hidden="true"></i>
-							    </a>
-							</li>
-							<li>
-								<a href="" class="media">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" class="media">
-									<i class="fa fa-flickr" aria-hidden="true"></i>
-							    </a>
-							</li>
-						</ul>
-					</div>
+					<ul>
+						<li>
+							<a href="#" class="media">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="media">
+								<i class="fa fa-github" aria-hidden="true"></i>
+						    </a>
+						</li>
+						<li>
+							<a href="" class="media">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="media">
+								<i class="fa fa-flickr" aria-hidden="true"></i>
+						    </a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div id="footer_down">
-				Prashanth@2016. All Rights Reserved
-			</div>
-		</footer>
-		<script type="text/javascript" src="portfolio.js"></script>	
+		</div>
+		<div id="footer_down">
+			Prashanth@2016. All Rights Reserved
+		</div>
+	</footer>
+		<!-- <script type="text/javascript" src="portfolio.js"></script> -->	
 </body>
 </html>
