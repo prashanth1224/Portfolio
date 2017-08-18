@@ -611,6 +611,14 @@ a {
 .page-section--blue {
   background-color: #2f5572;
   color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .page-section--blue {
+    text-align: left;
+  }
 }
 
 .headline {
@@ -696,6 +704,11 @@ a {
     width: 37%;
   }
 
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
+
   .row__medium-8 {
     width: 66.66%;
     float: left;
@@ -715,5 +728,49 @@ a {
 
   .generic-content-container p {
     font-size: 1.125rem;
+  }
+}
+
+.section-title {
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .section-title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .section-title {
+    padding-right: 160px;
+  }
+}
+
+.feature-item {
+	
+	position: relative;
+	padding-bottom: 2.5rem;
+}
+
+.feature-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.feature-item__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@media (min-width: 530px) {
+
+  .feature-item__title {
+    font-size: 1.875rem;
+    text-align: left;
   }
 }
