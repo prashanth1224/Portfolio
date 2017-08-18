@@ -7,5 +7,10 @@
 	&--blue {
 		background-color: $mainBlue;
 		color: #fff;
+		text-align: center;
+
+		@mixin atSmall {
+			text-align: left;
+		}
 	}
 }
