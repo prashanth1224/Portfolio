@@ -106,46 +106,43 @@
                     <div class="feature-item">
                         <a href="" target="_blank">
                             <picture>
-                                <source srcset="assets/images/calculator.jpg" media="(min-width: 1020px)">
-                                <source srcset="assets/images/calculator-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/calculator-landscape.jpg" alt="Calculator">
+                                <source srcset="assets/images/cart.jpg" media="(min-width: 1020px)">
+                                <source srcset="assets/images/cart-portrait.jpg" media="(min-width: 800px)">
+                                <img src="assets/images/cart-landscape.jpg" alt="Calculator">
                             </picture>
                             <br>
-                            <span class="feature-item__title">JavaScript Calculator</span>
+                            <span class="feature-item__title">Angular's Classifieds</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact">
-        <h2 class="headline headline--centered">Contact Me</h2>
-        <hr class="hrDark">
-        <div>
-            <form id="form_contact" novalidate="" class="col-lg-6 col-md-6 col-xs-12">
-                <div class="formValid">
-                    <label for="txtName">Name</label>
-                    <input type="text" placeholder="Name" id="txtName" required="" />
-                </div>
-                <div class="formValid">
-                    <label for="emailAddress">Email Address</label>
-                    <input type="email" placeholder="Email Address" id="emailAddress" required="" />
-                </div>
-                <div class="formValid">
-                    <label for="numberPhone">Phone Number</label>
-                    <input type="tel" placeholder="Phone Number" id="numberPhone" required="" />
-                </div>
-                <div class="formValid">
-                    <label>Message</label>
-                    <textarea id="txtmessage" placeholder="Message" rows="5" required=""></textarea>
-                </div>
-                <br>
-                <button type="submit" class="btn btn--orange" id="btnsubmit">Send</button>
-            </form>
-            <div>
-                <p>Want to get in touch with me? Be it to request more info about myself ... just feel free to drop me a line anytime.</p>
-                <p>I promise to reply A.S.A.P.</p>
-                <p>No spam/soliciting please :)</p>
+    <div id="contact" class="page-section page-section--contactMe">
+        <div class="wrapper">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <div class="contactMe">
+                <form id="form_contact" novalidate="" class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="contactMe--fields">
+                        <label for="txtName">Name</label>
+                        <input type="text" placeholder="Name" id="txtName" required="" />
+                    </div>
+                    <div class="contactMe--fields">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" placeholder="Email Address" id="emailAddress" required="" />
+                    </div>
+                    <div class="contactMe--fields">
+                        <label for="numberPhone">Phone Number</label>
+                        <input type="tel" placeholder="Phone Number" id="numberPhone" required="" />
+                    </div>
+                    <div class="contactMe--fields">
+                        <label>Message</label>
+                        <textarea id="txtmessage" placeholder="Message" rows="5" required=""></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn--orange" id="btnsubmit">Send</button>
+                </form>
             </div>
         </div>
     </div>

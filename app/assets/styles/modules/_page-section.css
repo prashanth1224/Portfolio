@@ -1,16 +1,27 @@
 .page-section {
-	padding: 1.2rem 0;
-	
-	@mixin atMedium {
-		padding: 4.5rem 0;
-	}
-	&--blue {
-		background-color: $mainBlue;
-		color: #fff;
-		text-align: center;
+    padding: 1.2rem 0;
 
-		@mixin atSmall {
-			text-align: left;
-		}
-	}
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+    &--blue {
+        background-color: $mainLightBlue;
+        /*color: #fff;*/
+        text-align: center;
+
+        @mixin atSmall {
+            text-align: left;
+        }
+    }
+
+    &--contactMe {
+		background-color: #e0e6ef;
+		
+
+        @mixin atMedium {
+            background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+    }
 }

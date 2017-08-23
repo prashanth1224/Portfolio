@@ -1,0 +1,36 @@
+.contactMe {
+    display: flex;
+
+    &--fields {
+
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+
+        input,
+        textarea {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border: 0 none;
+            font-size: 25px;
+            position: relative;
+            resize: none;
+            width: 100%;
+            line-height: 1.6;
+			color: #333;
+			
+            @mixin atMedium {
+            	color: #fff;
+            }
+            
+        }
+
+        label {
+        	opacity: 0;
+        }
+
+        input:focus, textarea:focus {
+        	outline: 0 none
+        }
+    }
+}
+

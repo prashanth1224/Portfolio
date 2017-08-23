@@ -598,7 +598,7 @@ a {
 }
 
 .page-section {
-	padding: 1.2rem 0;
+    padding: 1.2rem 0;
 }
 
 @media (min-width: 800px) {
@@ -609,8 +609,7 @@ a {
 }
 
 .page-section--blue {
-  background-color: #2f5572;
-  color: #fff;
+  background-color: #b3c2bf;/*color: #fff;*/
   text-align: center;
 }
 
@@ -618,6 +617,19 @@ a {
 
   .page-section--blue {
     text-align: left;
+  }
+}
+
+.page-section--contactMe {
+  background-color: #e0e6ef;
+}
+
+@media (min-width: 800px) {
+
+  .page-section--contactMe {
+    background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
+    background-size: cover;
+    color: #fff;
   }
 }
 
@@ -773,4 +785,44 @@ a {
     font-size: 1.875rem;
     text-align: left;
   }
+}
+
+.contactMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.contactMe--fields {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.contactMe--fields input,
+        .contactMe--fields textarea {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  font-size: 25px;
+  position: relative;
+  resize: none;
+  width: 100%;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 800px) {
+
+  .contactMe--fields input,
+        .contactMe--fields textarea {
+    color: #fff;
+  }
+}
+
+.contactMe--fields label {
+  opacity: 0;
+}
+
+.contactMe--fields input:focus, .contactMe--fields textarea:focus {
+  outline: 0 none
 }
