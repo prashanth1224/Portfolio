@@ -1,25 +1,39 @@
 .feature-item {
-	
-	position: relative;
-	padding-bottom: 2.5rem;
 
-	a {
-		text-decoration: none;
-		color: #333;
-	}
+    position: relative;
+    padding-bottom: 2.5rem;
+    transition-duration: 0.3s;
 
-	&__title {
-		font-size: 1.6rem;
-		font-weight: 300;
-		
-		
-		
+    a {
+        text-decoration: none;
+        color: #333;
+    }
 
-		@mixin atSmall {
-			font-size: 1.875rem;			
-			text-align: left;
-			
-		}
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 400;
 
-	}
+        position: absolute;
+        top: 46%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        color: $mainBlue;
+
+        @mixin atModerateLarge {
+            font-size: 1.875rem;
+            width: 65%;
+            /*text-align: left;*/
+        }
+    }
+}
+
+picture.works:hover,
+picture.works:focus,
+picture.works:active {    
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+    display: inline-block;    
+    font-size: 2rem;
 }
