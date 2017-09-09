@@ -6,8 +6,18 @@
 	@mixin atSmall {
 		font-size: 3.75rem;
 	}
-
+	
+	&__modal {
+		color: $mainBlue;
+	}
 	@mixin atModerateLarge {
-		padding-right: 160px
+		padding-right: 160px;
+
+		&__modal {
+			padding-right: 0px;
+			color: $mainBlue;
+			margin-bottom: 1.3rem;
+			margin-top: 0;
+		}
 	}
 }

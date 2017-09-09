@@ -21,7 +21,7 @@
             </div>
             <div class="site-header__menu-content">
                 <div class="site-header__btn-container">
-                    <a href="#" class="btn">Get in Touch</a>
+                    <a href="#" class="btn open-modal">Get in Touch</a>
                 </div>
                 <nav class="primary-nav primary-nav--pull-right">
                     <ul class="nav navbar-nav navbar-right">
@@ -48,7 +48,7 @@
                     <br> New Jersey.
                     <!-- <br>Take a look at some of my works and if you like them, feel free to contact me. -->
                 </p>
-                <p><a href="#" class="btn btn--orange btn--large">View my works</a></p>
+                <p><a href="#Portfolio" class="btn btn--orange btn--large">View my works</a></p>
             </div>
         </div>
     </div>
@@ -75,13 +75,13 @@
         </div>
     </div>
     <div id="Portfolio" class="page-section page-section--blue" data-matching-link="#portfolio-link">
-        <div class="wrapper">            
+        <div class="wrapper">
             <h2 class="section-title">Portfolio</h2>
             <div class="row row__gutters">
                 <div class="row__medium-4 row__medium-6">
                     <div class="feature-item">
                         <a href="https://prashanth1224.github.io/travel-site/" target="_blank">
-                            <picture class="works">
+                            <picture>
                                 <source srcset="assets/images/travelsite.jpg" media="(min-width: 1020px)">
                                 <source srcset="assets/images/travelsite-portrait.jpg" media="(min-width: 800px)">
                                 <img src="assets/images/travelsite-landscape.jpg" alt="Travel-site">
@@ -92,7 +92,7 @@
                     </div>
                     <div class="feature-item">
                         <a href="http://codepen.io/prashanthr1224/full/xExAJj/" target="_blank">
-                            <picture class="works">
+                            <picture>
                                 <source srcset="assets/images/AbdulKalam.jpg" media="(min-width: 1020px)">
                                 <source srcset="assets/images/AbdulKalam-portrait.jpg" media="(min-width: 800px)">
                                 <img src="assets/images/AbdulKalam-landscape.jpg" alt="Dr. A.P.J. Abdul Kalam Tribute page">
@@ -105,7 +105,7 @@
                 <div class="row__medium-4 row__medium-6">
                     <div class="feature-item">
                         <a href="http://codepen.io/prashanthr1224/full/bwmmpG/" target="_blank">
-                            <picture class="works">
+                            <picture>
                                 <source srcset="assets/images/randomQuoteMachine.jpg" media="(min-width: 1020px)">
                                 <source srcset="assets/images/randomQuoteMachine-portrait.jpg" media="(min-width: 800px)">
                                 <img src="assets/images/randomQuoteMachine-landscape.jpg" alt="Random Quote Machine">
@@ -116,13 +116,13 @@
                     </div>
                     <div class="feature-item">
                         <a href="" target="_blank">
-                            <picture class="works">
+                            <picture>
                                 <source srcset="assets/images/ngClassifieds.jpg" media="(min-width: 1020px)">
                                 <source srcset="assets/images/ngClassifieds-portrait.jpg" media="(min-width: 800px)">
                                 <img src="assets/images/ngClassifieds-landscape.jpg" alt="ngClassifieds">
                             </picture>
                             <br>
-                            <span class="feature-item__title subtitle">Angular's Classifieds</span>
+                            <span class="feature-item__title">Angular's Classifieds</span>
                         </a>
                     </div>
                 </div>
@@ -170,23 +170,23 @@
                 <div>
                     <ul>
                         <li>
-                            <a href="#" class="media">
+                            <a href="https://www.linkedin.com/" target="_blank" class="media">
 								<i class="fa fa-linkedin" aria-hidden="true"></i>
 							</a>
                         </li>
                         <li>
-                            <a href="" class="media">
+                            <a href="https://github.com/" target="_blank" class="media">
 								<i class="fa fa-github" aria-hidden="true"></i>
 						    </a>
                         </li>
                         <li>
-                            <a href="" class="media">
+                            <a href="https://twitter.com/" target="_blank" class="media">
 								<i class="fa fa-twitter" aria-hidden="true"></i>
 							</a>
                         </li>
                         <li>
-                            <a href="" class="media">
-								<i class="fa fa-flickr" aria-hidden="true"></i>
+                            <a href="https://www.facebook.com/" target="_blank" class="media">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
 						    </a>
                         </li>
                     </ul>
@@ -194,9 +194,33 @@
             </div>
         </div>
         <div class="site-footer__footer_down">
-            <p><span class="site-footer__text">Prashanth &copy; 2016 Portfolio. All Rights Reserved.</span><a href="#" class="btn btn--orange">Get in Touch</a></p>
+            <p><span class="site-footer__text">Prashanth &copy; 2016 Portfolio. All Rights Reserved.</span><a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="wrapper">
+                <h2 class="section-title section-title__modal">Get in Touch</h2>
+                <p class="modal__description">Please connect with me on any of the platforms below!</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/" target="_blank" class="media social-icons__linkedin">
+            	<i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+                <a href="https://github.com/" target="_blank" class="media social-icons__github">
+				<i class="fa fa-github" aria-hidden="true"></i>
+			</a>
+                <a href="https://twitter.com/" target="_blank" class="media social-icons__twitter">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+                <a href="https://www.facebook.com/" target="_blank" class="media social-icons__facebook">
+				<i class="fa fa-facebook " aria-hidden="true"></i>
+			</a>
+            </div>
+        </div>
+        <div class="modal__close">X</div>
+    </div>
+    </div>
     <script type="text/javascript" src="temp/scripts/app.js"></script>
 </body>
 
