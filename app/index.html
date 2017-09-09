@@ -6,15 +6,17 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <title>Personal Portfolio of Prashanth - Front End Developer</title>
     <meta name="keywords" content="prashanth, portfolio, prashanth1224l">
+    
     <link rel="stylesheet" href="temp/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="/temp/scripts/Vendor.js"></script>
 </head>
 
 <body>
     <header class="site-header">
         <div class="wrapper">
             <div class="site-header__logo">
-                <img src="assets/images/capture.png">
+                <img src="assets/images/logo.png">
             </div>
             <div class="site-header__menu-icon">
                 <div class="site-header__menu-icon__middle"></div>
@@ -82,9 +84,9 @@
                     <div class="feature-item">
                         <a href="https://prashanth1224.github.io/travel-site/" target="_blank">
                             <picture>
-                                <source srcset="assets/images/travelsite.jpg" media="(min-width: 1020px)">
-                                <source srcset="assets/images/travelsite-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/travelsite-landscape.jpg" alt="Travel-site">
+                                <source data-srcset="assets/images/travelsite.jpg" media="(min-width: 1020px)">
+                                <source data-srcset="assets/images/travelsite-portrait.jpg" media="(min-width: 800px)">
+                                <img class="lazyload" data-src="assets/images/travelsite-landscape.jpg" alt="Travel-site">
                             </picture>
                             <br>
                             <span class="feature-item__title">Travel-Website</span>
@@ -93,9 +95,9 @@
                     <div class="feature-item">
                         <a href="http://codepen.io/prashanthr1224/full/xExAJj/" target="_blank">
                             <picture>
-                                <source srcset="assets/images/AbdulKalam.jpg" media="(min-width: 1020px)">
-                                <source srcset="assets/images/AbdulKalam-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/AbdulKalam-landscape.jpg" alt="Dr. A.P.J. Abdul Kalam Tribute page">
+                                <source data-srcset="assets/images/AbdulKalam.jpg" media="(min-width: 1020px)">
+                                <source data-srcset="assets/images/AbdulKalam-portrait.jpg" media="(min-width: 800px)">
+                                <img class="lazyload" data-src="assets/images/AbdulKalam-landscape.jpg" alt="Dr. A.P.J. Abdul Kalam Tribute page">
                             </picture>
                             <br>
                             <span class="feature-item__title">Abdul Kalam Tribute page</span>
@@ -106,9 +108,9 @@
                     <div class="feature-item">
                         <a href="http://codepen.io/prashanthr1224/full/bwmmpG/" target="_blank">
                             <picture>
-                                <source srcset="assets/images/randomQuoteMachine.jpg" media="(min-width: 1020px)">
-                                <source srcset="assets/images/randomQuoteMachine-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/randomQuoteMachine-landscape.jpg" alt="Random Quote Machine">
+                                <source data-srcset="assets/images/randomQuoteMachine.jpg" media="(min-width: 1020px)">
+                                <source data-srcset="assets/images/randomQuoteMachine-portrait.jpg" media="(min-width: 800px)">
+                                <img class="lazyload" data-src="assets/images/randomQuoteMachine-landscape.jpg" alt="Random Quote Machine">
                             </picture>
                             <br>
                             <span class="feature-item__title">Random Quote Machine</span>
@@ -117,9 +119,9 @@
                     <div class="feature-item">
                         <a href="" target="_blank">
                             <picture>
-                                <source srcset="assets/images/ngClassifieds.jpg" media="(min-width: 1020px)">
-                                <source srcset="assets/images/ngClassifieds-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/ngClassifieds-landscape.jpg" alt="ngClassifieds">
+                                <source data-srcset="assets/images/ngClassifieds.jpg" media="(min-width: 1020px)">
+                                <source data-srcset="assets/images/ngClassifieds-portrait.jpg" media="(min-width: 800px)">
+                                <img class="lazyload" data-src="assets/images/ngClassifieds-landscape.jpg" alt="ngClassifieds">
                             </picture>
                             <br>
                             <span class="feature-item__title">Angular's Classifieds</span>
@@ -129,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div id="contact" class="page-section page-section--contactMe" data-matching-link="#contact-link">
+    <div id="contact" class="page-section page-section--contactMe lazyload" data-matching-link="#contact-link">
         <div class="wrapper">
             <h2 class="section-title">Contact Me</h2>
             <div class="contactMe">

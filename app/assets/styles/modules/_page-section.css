@@ -15,13 +15,15 @@
     }
 
     &--contactMe {
-		background-color: #e0e6ef;
-		
+        background-color: #e0e6ef;
+
 
         @mixin atMedium {
-            background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
-            background-size: cover;
-            color: #fff;
+            &.lazyloaded {
+                background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
+                background-size: cover;
+                color: #fff;
+            }
         }
     }
 }
