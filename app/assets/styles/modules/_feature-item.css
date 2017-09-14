@@ -13,15 +13,15 @@
         font-size: 1.6rem;
         font-weight: 400;
         position: absolute;
-        top: 46%;
+        top: 51%;
         left: 0;
         transform: translateY(-50%);
         width: 100%;
         text-align: center;
-        color: $mainBlue;
+        color: #fff;
 
         @mixin atModerateLarge {
-            font-size: 1.875rem;
+            font-size: 1.8rem;
             width: 65%;
             /*text-align: left;*/
         }
