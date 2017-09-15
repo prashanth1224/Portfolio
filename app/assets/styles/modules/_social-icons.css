@@ -1,0 +1,16 @@
+.social-icons {
+    text-align: center;
+
+    &__linkedin {
+        background-color: #0077B5;
+    }
+    &__github {
+    	background-color: #24292e;
+    }
+    &__twitter {
+    	background-color: #ffad1f;
+    }
+    &__facebook {
+    	background-color: #3b5998;
+    }
+}

@@ -20,7 +20,7 @@
 
         @mixin atMedium {
             &.lazyloaded {
-                background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
+                background: url('../../assets/images/contactMe_bg.jpg') bottom center no-repeat;
                 background-size: cover;
                 color: #fff;
             }

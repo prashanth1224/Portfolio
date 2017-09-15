@@ -630,7 +630,7 @@ a {
 @media (min-width: 800px) {
 
   .page-section--contactMe.lazyloaded {
-    background: url('/assets/images/contactMe_bg.jpg') bottom center no-repeat;
+    background: url('../../assets/images/contactMe_bg.jpg') bottom center no-repeat;
     background-size: cover;
     color: #fff;
   }
